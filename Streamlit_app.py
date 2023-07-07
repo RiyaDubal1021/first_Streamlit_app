@@ -76,7 +76,7 @@ if streamlit.button ('Get Fruit Load List'):
 #my_cur = my_cnx.cursor()
 #my_cur.execute("SELECT * from fruit_load_list")
 
-streamlit.stop()
+#streamlit.stop()
 # A new section to display fruit to add
 fruit_choice2 = streamlit.text_input('What fruit would you like to add?' ,'jackfruit')
 streamlit.write('Thanks for adding  ', fruit_choice2)
