@@ -27,6 +27,9 @@ fruits_selected = streamlit.multiselect("Pick some fruits:", list(my_fruit_list.
 fruits_to_show = my_fruit_list.loc[fruits_selected]
 
 streamlit.dataframe(fruits_to_show)
+# A new section to display fruityvice advise
+fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
+streamlit.write('The user entered ', fruit_choice)
 
 streamlit.header("Fruityvice Fruit Advice!")
 #Let's removed the line of raw JSON, and separate the base URL from the fruit name (which will make it easier to use a variable there).
