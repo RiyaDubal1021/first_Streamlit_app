@@ -61,10 +61,6 @@ except URLERROR as e:
 
 #streamlit.text(fruityvice_response.json())
 
-
-streamlit.stop()
-#query meta data
-
 streamlit.header("The Fruit Load List Contains:")
 # Snowflake related function
 def get_fruit_load_list():
@@ -80,6 +76,7 @@ if streamlit.button ('Get Fruit Load List'):
 #my_cur = my_cnx.cursor()
 #my_cur.execute("SELECT * from fruit_load_list")
 
+streamlit.stop()
 # A new section to display fruit to add
 fruit_choice2 = streamlit.text_input('What fruit would you like to add?' ,'jackfruit')
 streamlit.write('Thanks for adding  ', fruit_choice2)
