@@ -5,7 +5,7 @@ import pandas
 import requests
 import snowflake.connector
 import urllib.error 
-from urllib import URLERROR
+from urllib2 import URLERROR
 
 
 
