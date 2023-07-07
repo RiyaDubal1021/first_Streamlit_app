@@ -5,7 +5,7 @@ import pandas
 import requests
 import snowflake.connector
 import urllib.error 
-#from urllib2 import URLERROR
+from urllib.error import URLERROR
 
 
 
@@ -59,10 +59,9 @@ try:
     fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
     
 
-except urllib.error.URLERROR as e:
+except URLERROR as e:
   streamlit.error()
 
-#streamlit.text(fruityvice_response.json())
 
 streamlit.header("The Fruit Load List Contains:")
 # Snowflake related function
